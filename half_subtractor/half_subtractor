@@ -1,0 +1,12 @@
+
+module half_subtractor (
+    input A,      // Minuend
+    input B,      // Subtrahend
+    output Diff,  // Difference output
+    output Borrow // Borrow output
+);
+    // Difference = A XOR B
+    assign Diff   = A ^ B;
+    // Borrow = ~A & B
+    assign Borrow = ~A & B;
+endmodule
