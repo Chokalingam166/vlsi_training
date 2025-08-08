@@ -1,0 +1,12 @@
+
+module half_adder (
+    input A,      // First input bit
+    input B,      // Second input bit
+    output Sum,   // Sum output
+    output Carry  // Carry output
+);
+    // Sum = A XOR B
+    assign Sum   = A ^ B;
+    // Carry = A AND B
+    assign Carry = A & B;
+endmodule
