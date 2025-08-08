@@ -1,0 +1,8 @@
+
+module or_gate (
+    input A,    // First input
+    input B,    // Second input
+    output Y    // Output
+);
+    assign Y = A | B;  // OR operation
+endmodule
