@@ -1,0 +1,8 @@
+// File: odd_parity_gen.v
+module odd_parity_gen (
+    input  [3:0] data,   // 4-bit input data
+    output parity        // Output odd parity bit
+);
+    // For odd parity: invert XOR result of all data bits
+    assign parity = ~(^data);
+endmodule
