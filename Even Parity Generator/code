@@ -1,0 +1,8 @@
+// File: even_parity_gen.v
+module even_parity_gen (
+    input  [3:0] data,   // 4-bit input data
+    output parity        // Output even parity bit
+);
+    // XOR all bits to generate even parity
+    assign parity = ^data;  
+endmodule
