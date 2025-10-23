@@ -24,4 +24,4 @@ module tb_mux8to1;
         sel = 3'b000; #10;
         sel = 3'b001; #10;
         sel = 3'b010; #10;
-        sel = 3'b011; #10
+        sel = 3'b011; #10 
